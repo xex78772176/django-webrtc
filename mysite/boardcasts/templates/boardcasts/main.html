@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+    <head>
+        
+        <title>Room</title>
+
+        
+        <link rel ="stylesheet" type="text/css" href ="{%static 'css/main.css' %}">
+        <style>
+            body {
+              background-color: grey;
+            }
+            </style>
+    </head>
+<body>
+    <h3 id="label-username">Enter Username</h3>
+    <div>
+    <input id="username"><button id ="joinButton">Join</button>
+    </div>
+    <br><br>
+
+
+    <div class = "main-container">
+        <div id = "video-container">
+            <div><video id = "local-video" style="float: left;" autoplay playsinline></video></div>
+            
+        </div>
+
+
+
+    <div id="chat">
+    <h3>Chat room</h3>
+        <div id ="messages">
+            <ul id = "message-list"></ul>
+        </div>
+
+        
+            <div><input id="msg"><button id = "sendmsgbutton">send message</button></div>
+            
+
+            <div><button id ="audiobutton">Audio off</button>
+                <button id ="videobutton">video off</button>
+            </div>
+
+                <div>
+                <button id ="res1button" class = "resbutton">Resolution 320x240</button>
+                <button id ="res2button" class = "resbutton">Resolution 640x480</button>
+                
+            </div>
+            
+    </div>
+</div>
+
+<script type="text/javascript" src ="{%static 'js/main.js' %}"></script>
+</body>
+</html>

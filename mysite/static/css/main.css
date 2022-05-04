@@ -1,0 +1,35 @@
+.video-container{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+
+    
+}
+
+.main-container{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    border: solid;
+}
+
+video{
+    
+    width: 320px;
+    height: 240px;
+    background-color:black;
+}
+
+video.videolow{
+    width: 320px;
+    height: 240px;
+    background-color:black;
+}
+video.videomid{
+    width: 640px;
+    height: 480px;
+    background-color:black;
+}
+
+
+
+
